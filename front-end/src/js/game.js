@@ -9,7 +9,7 @@ function SnakeGame(containerId){
     this.context = null;
     this.interval = null;
     this.timeout = null;
-    this.countdownSeconds = 3;
+    this.countdownSeconds = 0;
         
     this.version = '1.1';    
     this.size = 10; // square size
@@ -81,7 +81,7 @@ function SnakeGame(containerId){
         this.Snake.moveRight();
         this.Snake.position.x = 200;
         this.Snake.position.y = 200;
-        this.countdownSeconds = 3;
+        this.countdownSeconds = 0;
         
         this.Screen.refreshCountdown();
         this.Screen.refreshScore();
@@ -155,6 +155,7 @@ function SnakeGame(containerId){
     this.lost = function() {
         this.clearTimeEvents();
         alert('Game over!\nYou have reached the level ' + this.currentLevel + ' and your score is ' + this.score + '.');
+        gameOverEvent(this.score);
         this.restart();
     }
     
@@ -320,7 +321,14 @@ function SnakeGame(containerId){
             self.Snake.length = 3;
         }
     };
-    
     this.load();
-    
+}
+
+function gameOverEvent(score){
+    let gameOverEvent = new CustomEvent("game:over", {
+		detail: {
+			score: score,
+		},
+	});
+	window.dispatchEvent(gameOverEvent);
 }
