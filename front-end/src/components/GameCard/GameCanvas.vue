@@ -2,8 +2,8 @@
 	<div id="GameCanvas-wrapper">
 		<canvas id="gameCanvas" width="300" height="500"></canvas>
         <div class="game-controls">
-            <div class="score text">Score: 0</div>
-            <button class="startButton waves-effect waves-light btn black">Start</button>
+            <div class="score text" id="score">Score: 0</div>
+            <button class="startButton waves-effect waves-light btn black" id="startButton">Start</button>
         </div>
 	</div>
 </template>

@@ -1,7 +1,8 @@
-var snake = new SnakeGame('gameCanvas');
+let snake = SnakeGame("GameCanvas-wrapper");
 console.log(snake);
- 
- function SnakeGame(containerId){
+
+function SnakeGame(containerId){
+        
     var self = this; 
     
     this.containerId = containerId;
@@ -184,20 +185,19 @@ console.log(snake);
         level: null,
         score: null,
         countdown: null,
-        draw: function() {
-            // let gameHtml = '<div id="snakeGame"><header><h1>Snake</h1><div id="board"><div><a href="javascript:;" id="start">START</a></div><div>Level: <span id="level">?</span></div><div>Score: <span id="score">?</span></div><div><span id="countdown"></span></div></div></header><canvas id="gameboard" width="400" height="400"></canvas><footer><p class="help">Just use the keyboard arrows to handle the snake.</p><p>Snake adaptation v' + self.version + ' by <a href="http://matias.beckerle.com.ar" target="_blank" title="matiasb">matiasb</a></p></footer></div>';
-            // this.container.innerHTML = gameHtml;
-              
+        draw: function() {   
             this.gameboard = document.getElementById('gameCanvas');
             this.start = document.getElementById('startButton');
-            //this.level = document.getElementById('level');
             this.score = document.getElementById('score');
-            // this.countdown = document.getElementById('countdown');
-             
+
+            let temporaryElement = document.createElement('h1')
+            this.countdown = temporaryElement
+            temporaryElement.style.display = "none";
+
             return self.checkIfCanvasIsSupported();
         },
         refreshLevel: function() {
-            this.level.innerHTML = self.currentLevel;
+            
         },
         refreshScore: function() {
             this.score.innerHTML = self.score;
@@ -206,7 +206,7 @@ console.log(snake);
             this.countdown.innerHTML = self.countdownSeconds;
         },
         restart: function() {
-            this.level.innerHTML = '?';
+            
             this.score.innerHTML = '?';
             this.hideCountdown();
         },

@@ -31,7 +31,7 @@ execSync('git init',{
     stdio: 'inherit'
 });
 
-execSync('heroku git:remote -a bird-flap-game',{
+execSync('heroku git:remote -a snek-online',{
     cwd: path.join(__dirname,"dist"),
     stdio: 'inherit'
 });
