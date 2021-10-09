@@ -31,25 +31,25 @@ function SnakeGame(containerId){
         }
             
         switch(keyCode){
-            case 37:
+            case 65:
                 if (this.Snake.direction != 'right'){
                     this.Snake.moveLeft();
                 }
                 break;
                         
-            case 38:
+            case 87:
                 if (this.Snake.direction != 'down'){
                     this.Snake.moveUp();
                 }
                 break; 
           
-            case 39:
+            case 68:
                 if (this.Snake.direction != 'left'){
                     this.Snake.moveRight();
                 }
                 break; 
         
-            case 40:
+            case 83:
                 if (this.Snake.direction != 'up'){
                     this.Snake.moveDown();
                 }
