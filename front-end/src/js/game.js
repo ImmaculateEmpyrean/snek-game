@@ -191,7 +191,7 @@ function SnakeGame(containerId){
             this.start = document.getElementById('startButton');
             this.score = document.getElementById('score');
             
-            // for some reason the game doest not work without a temprrary object
+            // temporary object preffered instead of going through and changing the entire code..
             let temporaryElement = document.createElement('h1')
             this.countdown = temporaryElement
             temporaryElement.style.display = "none";
