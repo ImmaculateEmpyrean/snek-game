@@ -1,10 +1,10 @@
-# Flappy-Bird ONLINE
+# Snek ONLINE
 
-### Connecting with Flappy-Bird players around the **WORLD** anonymously was the object in writing this website.
+### Connecting with Snek players around the **WORLD** anonymously was the object in writing this website.
 
 ### The central **Database** (a single file) is used to store and display **HIGHSCORES** to all players around the world.
 
-### This Website is hosted live at the url: https://bird-flap-game.herokuapp.com/
+### This Website is hosted live at the url: https://snek-online.herokuapp.com/
 
 ---
 
