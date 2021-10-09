@@ -2,7 +2,11 @@
 	<div id="GameCanvas-wrapper">
 		<canvas id="gameCanvas" width="300" height="500"></canvas>
         <div class="game-controls">
-            <div class="score text" id="score">Score: 0</div>
+            <div class="score">
+                <p class="text">
+                    Score : <span id="score">0</span>
+                </p> 
+            </div>
             <button class="startButton waves-effect waves-light btn black" id="startButton">Start</button>
         </div>
 	</div>
@@ -51,6 +55,8 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        p{margin: 0;}
     }
     .startButton{
         flex: 1 1 50%;
