@@ -1,0 +1,27 @@
+[
+	{
+		"playerName": "John",
+		"playerCountryCode": "US",
+		"score": 25
+	},
+	{
+		"playerName": "Aiyla",
+		"playerCountryCode": "TR",
+		"score": 19
+	},
+	{
+		"playerName": "Seo-jun",
+		"playerCountryCode": "KR",
+		"score": 14
+	},
+	{
+		"playerName": "Jean",
+		"playerCountryCode": "FR",
+		"score": 8
+	},
+	{
+		"playerName": "Tobias",
+		"playerCountryCode": "AT",
+		"score": 1
+	}
+]

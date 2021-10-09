@@ -1,0 +1,13 @@
+$spacing-normal: 24px;
+$spacing-small: 12px;
+
+@mixin atleast-desktop {
+	@media (min-width: 993px) {
+		@content;
+	}
+}
+@mixin atleast-tablet {
+	@media (min-width: 601px) {
+		@content;
+	}
+}

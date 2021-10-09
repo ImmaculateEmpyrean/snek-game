@@ -1,0 +1,22 @@
+{
+  "name": "flappy-bird",
+  "version": "1.0.0",
+  "description": "A website allowing users to play competetive flappy bird worldwide.",
+  "main": "index.js",
+  "scripts": {
+    "build-deploy": "node build-deploy.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ImmaculateEmpyrean/flappy-bird.git"
+  },
+  "author": "veeru",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ImmaculateEmpyrean/flappy-bird/issues"
+  },
+  "homepage": "https://github.com/ImmaculateEmpyrean/flappy-bird#readme",
+  "dependencies": {
+    "fs-extra": "^10.0.0"
+  }
+}
